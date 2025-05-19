@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.flag {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.saffron, .white, .green {
+    height: 33.33%;
+    width: 100%;
+}
+
+.saffron {
+    background-color: #FF9933;
+}
+
+.white {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.green {
+    background-color: #138808;
+}
+
+.chakra ul {
+    list-style: none;
+    border-radius: 50%;
+    border: 2px solid #000080;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.chakra li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 1px;
+    background-color: #000080;
+    transform-origin: left;
+    transform: translateY(-50%) rotate(calc(15deg * var(--i)));
+}
