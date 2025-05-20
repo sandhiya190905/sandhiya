@@ -90,3 +90,48 @@ switch (n) {
         console.log("Enter the valid number")
         break
 }
+
+var arr=[10,20,30,40,50]
+
+for(var index in arr){
+    console.log(index)
+}
+for(var key of arr){
+    console.log(key)
+}
+
+var obj ={name :"keerthu",dept :"computer science"}
+ for(var key in obj){
+    console.log(key)
+    console.log(obj[key])
+ }
+
+ var arr=[1,2,3,4,5]
+
+ var arr2 =[...arr,6,7,8]
+
+ console.log(arr2)
+
+ var marks =[88,99,95,98,"fail"]
+ var[m1,m2,m3,m4,m5] = marks;
+ console.log(m1)
+ console.log(m2)
+ console.log(m3)
+ console.log(m4)
+ console.log(m5)
+
+ function saybye(){
+    console.log("bye")
+ }
+ function demo(name,callback){
+    console.log("hello" + name)
+    callback()
+ }
+ demo("keerthu",saybye);
+
+ const btn=document.getElementById("btn1");
+
+ btn.onclick = function(){
+    window.open("https://www.instagram.com")
+    
+ }
