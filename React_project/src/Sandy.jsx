@@ -1,19 +1,8 @@
 import React from 'react'
 
-function sandy({users}) {
+function sandy({state}) {
   return (
-    <>
-    <div>
-    {users.map((users) =>(
-      <ol key={users.id}>
-      <li>{users.name}</li>
-      <li>{users.email}</li>
-      </ol>
-    ))}
-    
-    </div>
-
-    </>
+    <div>{state}</div>
   )
 }
 
